@@ -1,0 +1,21 @@
+exception occured while clicking Error: locator.click: Error: strict mode violation: locator('a:has-text("ACCOUNT")') resolved to 2 elements:
+    1) <a title="My Account" data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/opencart/upload/index.php?route=account/account">…</a> aka getByRole('link', { name: ' My Account' })
+    2) <a href="http://localhost/opencart/upload/index.php?route=account/account">My Account</a> aka getByRole('link', { name: 'My Account', exact: true })
+
+Call log:
+  - waiting for locator('a:has-text("ACCOUNT")')
+
+exception occured while clicking Error: locator.click: Test ended.
+Call log:
+  - waiting for getByText('Register')
+    - locator resolved to <a href="http://localhost/opencart/upload/index.php?route=account/register">Register</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+
